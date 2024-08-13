@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+}
+main{
+    overflow: hidden;
+}
+.canvas{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    background-color: #000;
+}
+.canvas i{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.canvas i:hover{
+    color: antiquewhite;
+    transform: scale(1.3);
+}
+.menu-bar{
+    position: absolute;
+    z-index: 78;
+    bottom: 40px;
+    left: 250px;
+    height: 8vh;
+    width: 60vw;
+    background-color: #999999;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px snow;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#save{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background:#b2b2b0;
+    transition: all 0.4s ease-in-out;
+
+
+}
+#save:hover{
+    background-color: rgb(207, 246, 207);
+    box-shadow: 2px 2px 4px green;
+}
+#clear{
+    font-size: 1rem;
+    background-color: #f1d7d73d;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+
+
+}
+#clear:hover{
+    background-color: rgba(255, 0, 0, 0.157);
+    box-shadow: 2px 2px 4px rgb(200, 79, 79);
+}
+.menu-bar label{
+    font-size: 1.2rem;
+    color: #000;
+
+}
+#stroke{
+    width: 6rem;
+    margin-left: -20px;
+}
+#colorValue{
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.left-flot{
+    color: #464444e1;
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    opacity: 0;
+    box-shadow: 0 0 12px white;
+    transition: width 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.hidden{
+    visibility: hidden;
+    width: 0;
+    opacity: 0;
+}
+.visible{
+    visibility: visible;
+    width: 16vw;
+    opacity: 1;
+}
+/* for flat items */
+#close{
+    position: absolute;
+    padding: 0.12rem 0.3rem;
+    top: 5px;
+    right: 6px;
+    color: red;
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: #545353;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+#close:hover{
+    background-color: #605959;
+
+}
+.top-flot{
+    height: 100vh;
+    width: 100%;
+    background-color: #2E2E2E;
+    color: #fff;
+    padding: 10vh 0  0 3vh ;
+}
+
