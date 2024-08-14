@@ -10,6 +10,7 @@ html , body{
     font-family: 'Helvetica Neue', Arial, sans-serif;
 
 }
+/* canvas app */
 #canvs-main{
     overflow: hidden;
 }
@@ -139,8 +140,12 @@ html , body{
     transition: all 0.5s ease-in-out;    
 
 }
+.hide-main{
+    display: none;
+}
 
 .hidden{
+    
     visibility: hidden;
     width: 0;
     opacity: 0;
@@ -174,6 +179,67 @@ html , body{
     background-color: #2E2E2E;
     color: #fff;
     padding: 10vh 0  0 3vh ;
+}
+
+
+/*  basic calc */
+#basiccalc{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.calc{
+    height: 80vh;
+    width: 25vw;
+    border: 2px solid red;
+}
+.input{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    align-content: center;
+}
+.history{
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.input input {
+    width: 100%;
+    background-color: #000;
+    outline: 0;
+    color: #fff;
+    text-align: end;
+    padding: 3vh;
+    font-size: 1.5rem;
+    border: 0;
+}
+.btn{
+     height: 4.3rem;
+     width: 4.3rem;
+     border: 0;
+     color: #fff;
+     font-size: 1.3rem;
+     border-radius: 50px;
+     background-color: #505050;
+     margin: 1px;
+}
+.oprator{
+    background-color: #FF9500;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+
+}
+.removel{
+    background-color: #ababab;
+    color: #000;
 }
 
 /* responcive? */

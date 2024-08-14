@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/dead64de13.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main id="canvs-main" class="hidden">
+    <main id="canvs-main" class="hide-main">
       <div class="canvas">
         <div class="switchInfo hidden">
           <p id="math">Math-Notes</p>
@@ -59,7 +59,48 @@
       </div>
 
     </main>
-
+    <!-- basic calculator -->
+<main id="basiccalc">
+  <div class="calc">
+    <div class="input">
+        <div class="history">
+            @
+        </div>
+        <input id="display" type="text" disabled >
+    </div>
+    <div>
+        <button class="removel btn" value="clear">C</button>
+        <button class="removel btn" value="+/-"> &plusmn;</button>
+        <button class="removel btn" value="%">%</button>
+        <button class="oprator btn" value="/">&divide;</button>
+    </div>
+    <div>
+        <button class="btn" value="7">7</button>
+        <button class="btn" value="8">8</button>
+        <button class="btn" value="9">9</button>
+        <button class="oprator btn" value="*">&times;</button>
+    </div>
+    <div>
+        <button class="btn btn" value="4">4</button>
+        <button class="btn btn" value="5">5</button>
+        <button class="btn btn" value="6">6</button>
+        <button class="oprator btn" value="-">-</button>
+    </div>
+    <div>
+        <button class="btn" value="1">1</button>
+        <button class="btn" value="2">2</button>
+        <button class="btn" value="3">3</button>
+        <button class="oprator btn" value="+">+</button>
+    </div>
+    <div>
+        <button class="btn"><i class="fa-solid fa-repeat" id="switch"></i>0</button>
+        <button class="btn" value="0">0</button>
+        <button class="btn" value=".">.</button>
+        <button class="oprator btn" value="=">=</button>
+    </div>
+   
+</div>
+</main>
 
     <script src="script.js"></script>
 </body>
