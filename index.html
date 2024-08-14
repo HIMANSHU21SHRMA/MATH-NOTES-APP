@@ -6,15 +6,24 @@
     <title>CANVA</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dead64de13.js" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
-    <main>
+    <main id="canvs-main" class="hidden">
       <div class="canvas">
+        <div class="switchInfo hidden">
+          <p id="math">Math-Notes</p>
+          <p id="basic">Basic</p>
+          <p id="scientefic">Scientefic</p>
+          <p id="convert">Convert</p>
+        </div>
         <i class="fa-solid fa-bars"></i>
         <canvas id="canvas"></canvas>
+       
         <div class="menu-bar">
+         
+          <i class="fa-solid fa-repeat" id="switch"></i>
+           
+        
           <button id="clear">Clear</button>
 
          <label for="stroke">STROKE:</label>
@@ -51,7 +60,7 @@
 
     </main>
 
-    
+
     <script src="script.js"></script>
 </body>
 </html>

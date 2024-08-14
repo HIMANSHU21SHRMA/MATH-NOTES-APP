@@ -1,13 +1,13 @@
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
 const leftFlot = document.querySelector(".left-flot")
+const clearBtn = document.querySelector('#clear');
+const saveBtn = document.querySelector('#save')
 
 // function for resizing canvas
 const resizing = () => {
     canvas.height = window.innerHeight
     canvas.width = window.innerWidth
-    ctx.clearRect(0, 0, canvas.width, canvas.height );
-
 }
 // Resize the canvas on page load and window resize
 window.addEventListener('resize', resizing)
@@ -86,6 +86,19 @@ canvas.addEventListener('mousedown', startPosition);
 canvas.addEventListener('mouseup', finishedPosition);
 canvas.addEventListener('mousemove', draw);
 
+
+//  for clear canvas
+ 
+clearBtn.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height );
+
+})
+// for save it on local storage
+//    saveBtn.addEventListener('click',() => {
+     
+
+//    })
+
 //  for side bar
 const icon = document.querySelector('.fa-bars')
 const sideBar = document.querySelector('.left-flot')
@@ -101,7 +114,14 @@ hideBtn.addEventListener("click", () => {
     sideBar.classList.toggle('hidden');
 })
 
+// for switch in basic or etc..
+
+const switchBtn =  document.querySelector('#switch')
+const switchInfo = document.querySelector('.switchInfo')
+
+switchBtn.addEventListener('click', () => {
+    switchInfo.classList.toggle('hidden');
+    
 
 
-
-
+})
