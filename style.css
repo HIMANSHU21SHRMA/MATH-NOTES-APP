@@ -44,7 +44,7 @@ body.loaded {
     transform: scale(1.3);
 }
 .switchInfo{
-    height: 19vh;
+    height:11vh;
     width: 8rem;
     background-color: #b9b595;
     border-radius: 20px;
@@ -217,6 +217,7 @@ body.loaded {
     height: 80vh;
     width: 25vw;
     border: 2px solid red;
+    position: relative;
 }
 .input{
     height: 20vh;
@@ -230,6 +231,7 @@ body.loaded {
     left: 20px;
     font-size: 1.3rem;
     color: #fff;
+    cursor: pointer;
 }
 .input input {
     width: 100%;
@@ -261,6 +263,74 @@ body.loaded {
 .removel{
     background-color: #ababab;
     color: #000;
+}
+.switch-to{
+    position: absolute;
+    bottom: 60px;
+    background: #000;
+    left: 30px;
+    height:11vh;
+    width: 8rem;
+    background-color: #b9b595;
+    border-radius: 20px;
+    z-index: 99;
+    font-size: 1.2rem;
+    color: #3f302b;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    transition: all 0.5s ease-in-out;   
+
+}
+
+.cont{
+    cursor: pointer;
+
+}
+.cont:hover{
+    background: #c6b6b66e;
+
+}
+.switch-to p{
+    width: 87%;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+.switch-to p:hover{
+    background: #d7c4c4;
+    
+}
+.switch-to a{
+    color: #3f302b;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+/* history bar */
+.leftflots{
+    height: 100%;
+    width: 12rem;
+    position: absolute;
+    z-index: 97;
+    overflow: hidden;
+    background: #000;
+    padding-top: 40px;
+    text-align:start;
+    padding-left: 18px;
+}
+.closeicon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #8b898997;
+
 }
 
 /* responcive? */

@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dead64de13.js" crossorigin="anonymous"></script>
 </head>
 <body>
       <!-- basic calculator -->
 <main id="basiccalc">
     <div class="calc">
+        <div class="leftflots hidden">
+                <div class="closeicon">
+                  <p id="close-btn">&times;</p>
+                </div>
+                <div class="cont">
+
+                </div>
+               
+             
+                
+              </div>
       <div class="input">
           <div class="history">
-              @
+            <i class="fa-solid fa-clock-rotate-left"></i>
           </div>
           <input id="display" type="text" disabled >
       </div>
@@ -41,14 +53,18 @@
           <button class="oprator btn" value="+">+</button>
       </div>
       <div>
-          <button class="btn"><i class="fa-solid fa-repeat" id="switch"></i>0</button>
+          <button class="btn"  id="switch"><i class="fa-solid fa-repeat"></i></button>
           <button class="btn" value="0">0</button>
           <button class="btn" value=".">.</button>
           <button class="oprator btn" value="=">=</button>
       </div>
-     
+      <div class="switch-to hidden">
+        <p id="math"><a href="index.html">Math-Notes</a></p>
+        <p id="basic"><a href="basiccalc.html">Basic</a></p>
+  
+      </div>
   </div>
   </main>
-  <script src="scriptClc.js"></script>
+  <script src="basiccalc.js"></script>
 </body>
 </html>
